@@ -153,7 +153,7 @@ Can be an integer to determine the exact padding."
 
    (tooltip :background base0 :foreground fg)
 
-   (fringe :background base2)
+   (fringe :background bg)
 
    ((line-number &override) :foreground base5 :background (doom-darken bg 0.06))
    ((line-number-current-line &override) :foreground fg :background line-highlight)

@@ -57,7 +57,7 @@ Can be an integer to determine the exact padding."
    (indigo     '("#7a88cf" "#7a88cf" "brightblack"))
    (region     '("#80b362ff" "#80b362ff" "brightblack"))
    (selection  '("#80b362ff" "#80b362ff" "brightblack"))
-   (fg         '("#c8d3f5" "#c8d3f5" "brightwhite"))
+   (fg         '("#e3e9fa" "#e3e9fa" "brightwhite"))
    (fg-alt     '("#b4c2f0" "#b4c2f0" "white"))
 
    (grey base5)

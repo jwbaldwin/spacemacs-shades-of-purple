@@ -67,15 +67,15 @@ Can be an integer to determine the exact padding."
    (light-red     '("#ff98a4" "#ff98a4" "brightred"))
    (orange        '("#ff9d00" "#ff9d00" "brightred"))
    (light-green   '("#a5ff90" "#a5ff90" "green"))
-   (green         '("#3ad900" "#3ad900" "green"))
+   (green         '("#70d900" "#70d900" "green"))
    (dark-green    '("#00ff00" "#00ff00" "green"))
    (dark-teal     '("#37fea1" "#37fea1" "green"))
    (teal          '("#ff628c" "#ff628c" "brightgreen"))
    (light-teal    '("#7af8ca" "#7af8ca" "brightgreen"))
    (yellow        '("#fad000" "#fad00 " "brightyellow"))
-   (blue          '("#82aaff" "#82aaff" "brightblue"))
+   (blue          '("#9982ff" "#9982ff" "brightblue"))
    (dark-blue     '("#4976eb" "#4976eb" "brightblue"))
-   (light-blue    '("#50c4fa" "#50c4fa" "blue"))
+   (light-blue    '("#j0c4fa" "#50c4fa" "blue"))
    (light-magenta '("#baacff" "#baacff" "brightmagenta"))
    (magenta       '("#ff9d00" "#ff9d00" "brightmagenta"))
    (violet        '("#f989d3" "#f989d3" "magenta"))
@@ -122,6 +122,17 @@ Can be an integer to determine the exact padding."
 
   ;; --- base faces ------------------------
   (((lazy-highlight &override) :background purple :foreground fg :distant-foreground fg)
+
+   (font-lock-comment-face
+    :foreground comments
+    :slant 'italic)
+
+   (font-lock-keyword-face :slant 'italic :foreground keywords)
+
+   (font-lock-doc-face
+    :inherit 'font-lock-comment-face
+    :foreground doc-comments
+    :slant 'italic)
 
    (evil-goggles-default-face :inherit 'region :background (doom-blend region bg 0.5))
 
